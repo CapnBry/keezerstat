@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{171CF72C-20B5-4641-BBA6-3A2A126F195C}</ProjectGuid>
+    <RootNamespace>keezerstat</RootNamespace>
+    <ProjectName>keezerstat</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Arduino\arduino-1.0.1\hardware\arduino\cores\arduino;C:\Arduino\arduino-1.0.1\hardware\arduino\variants\standard;C:\Arduino\arduino-1.0.1\libraries\Wire;C:\Arduino\arduino-1.0.1\libraries\Wire\utility;C:\Users\bmayland\Documents\Arduino\libraries\LiquidCrystal;C:\Users\bmayland\Documents\Arduino\libraries\LiquidCrystal\utility;C:\Users\bmayland\Documents\Arduino\libraries\OneWire;C:\Users\bmayland\Documents\Arduino\libraries\OneWire\utility;C:\Users\bmayland\Documents\Arduino\libraries\Bounce;C:\Users\bmayland\Documents\Arduino\libraries\Bounce\utility;C:\Users\bmayland\Documents\Arduino\libraries\DallasTemperature;C:\Users\bmayland\Documents\Arduino\libraries\DallasTemperature\utility;c:\arduino\arduino-1.0.1\hardware\tools\avr\avr\include\;c:\arduino\arduino-1.0.1\hardware\tools\avr\avr\include\avr\;c:\arduino\arduino-1.0.1\hardware\tools\avr\avr\;c:\arduino\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>Visual Micro\.keezerstat.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>_DEBUG=1;_VMDEBUG=1;ARDUINO=101;__AVR_ATmega328P__;F_CPU=8000000L;__AVR__;TWI_FREQ=400000L;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Arduino\arduino-1.0.1\hardware\arduino\cores\arduino;C:\Arduino\arduino-1.0.1\hardware\arduino\variants\standard;C:\Arduino\arduino-1.0.1\libraries\Wire;C:\Arduino\arduino-1.0.1\libraries\Wire\utility;C:\Users\bmayland\Documents\Arduino\libraries\LiquidCrystal;C:\Users\bmayland\Documents\Arduino\libraries\LiquidCrystal\utility;C:\Users\bmayland\Documents\Arduino\libraries\OneWire;C:\Users\bmayland\Documents\Arduino\libraries\OneWire\utility;C:\Users\bmayland\Documents\Arduino\libraries\Bounce;C:\Users\bmayland\Documents\Arduino\libraries\Bounce\utility;C:\Users\bmayland\Documents\Arduino\libraries\DallasTemperature;C:\Users\bmayland\Documents\Arduino\libraries\DallasTemperature\utility;c:\arduino\arduino-1.0.1\hardware\tools\avr\avr\include\;c:\arduino\arduino-1.0.1\hardware\tools\avr\avr\include\avr\;c:\arduino\arduino-1.0.1\hardware\tools\avr\avr\;c:\arduino\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>Visual Micro\.keezerstat.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>ARDUINO=101;__AVR_ATmega328P__;F_CPU=8000000L;__AVR__;TWI_FREQ=400000L;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="keezerstat.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bigchars.h" />
+    <ClInclude Include="encodermenu.h" />
+    <ClInclude Include="fcmenu.h" />
+    <ClInclude Include="keezerstat.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="lcdcolors.h" />
+    <ClInclude Include="rgbcontrol.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Visual Micro\.keezerstat.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="encodermenu.cpp" />
+    <ClCompile Include="fcmenu.cpp" />
+    <ClCompile Include="rgbcontrol.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="COM3" arduino.board.name="atmega328bb" arduino.board.desc="ATmega328 (8 MHz internal)" arduino.board.property_bag="atmega328bb.name=ATmega328 (8 MHz internal)&#xD;&#xA;atmega328bb.upload.protocol=arduino&#xD;&#xA;atmega328bb.upload.maximum_size=32256&#xD;&#xA;atmega328bb.upload.speed=115200&#xD;&#xA;atmega328bb.bootloader.low_fuses=0xE2&#xD;&#xA;atmega328bb.bootloader.high_fuses=0xD9&#xD;&#xA;atmega328bb.bootloader.extended_fuses=0x07&#xD;&#xA;atmega328bb.bootloader.path=arduino:atmega&#xD;&#xA;atmega328bb.bootloader.file=ATmegaBOOT_168_pro_8MHz.hex&#xD;&#xA;atmega328bb.bootloader.unlock_bits=0x3F&#xD;&#xA;atmega328bb.bootloader.lock_bits=0x0F&#xD;&#xA;atmega328bb.build.mcu=atmega328p&#xD;&#xA;atmega328bb.build.f_cpu=8000000L&#xD;&#xA;atmega328bb.build.core=arduino:arduino&#xD;&#xA;atmega328bb.build.variant=standard&#xD;&#xA;" arduino.build.mcu="atmega328p" arduino.build.f_cpu="8000000L" arduino.build.core="arduino" arduino.upload.protocol="arduino" arduino.upload.speed="115200" arduino.upload.maximum_size="32256" VM_ADDITIONAL_PREPROC="TWI_FREQ=400000L" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

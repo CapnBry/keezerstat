@@ -1,0 +1,7 @@
+Visual Micro
+ipch
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.filters
